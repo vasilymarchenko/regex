@@ -1,52 +1,136 @@
-# Prerequisites
-*.d
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+.svn
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+*.dbmdl
+*proj.user
+*.DotSettings.user
+*.suo
+*.ncrunchproject
+*.ncrunchsolution
 
-# Linker output
-*.ilk
-*.map
-*.exp
+bin/
+obj/
+/output/
+/build/
+/components/*.zip
+/staging/
+/Tools/MongoDb/*.zip
+/code/Sitecore.Kernel/Components/
+/code/Sitecore.Kernel/bin/
 
-# Precompiled Headers
-*.gch
-*.pch
+/code/Sitecore/_ReSharper.Sitecore/
+/code/Sitecore.Client/temp/
+/code/Sitecore.Client/data/
+/code/Sitecore.Client/App_Data/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+/code/Sitecore/packages/*
+!/code/Sitecore/packages/*.config
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+/nuspecs/*
+!/nuspecs/parse.ps1
+!/nuspecs/template_component.nuspec
+!/nuspecs/template_packages.config
 
-# Executables
+# For now we will allow this content to stay since it required during the build
+#/code/Sitecore.Client/bin/
+
+/code/Sitecore.Client/components/
+/code/Sitecore.Client/sitecore/shell/Themes/Standard/*.zip
+/code/Sitecore.Client/sitecore/shell/Controls/Rich Text Editor/Dictionaries/
+code/Sitecore.IntegrationTests/website/
+/code/OMS/Sitecore.Analytics/bin/
+/code/OMS/FunctionalTests/Sitecore.Analytics.ConversionTool.Behaviors/Damps/TestData
+
+/buildscript/bin/
+/buildscript/bfdev/
+/buildscript/obj/
+/buildscript/build.log*
+/buildscript/NuGet.exe
+/buildscript/Environment.local.include
+/buildscript/tg.*.bat
+/buildscript/generate.*.bat
+/buildscript/setup/PerformanceCounters/*.wxi
+/buildscript/tools/
+!/buildscript/tools/NugetScripts
+!/buildscript/tools/UpdateConfigs
+
+/.nuget/Nuget.exe
+
+/code/Databases/*.ldf
+/code/Databases/*.mdf
+/code/Databases/Sitecore_Analytics/bin/
+/code/Databases/Sitecore_Sessions/bin/
+/Databases/
+
+/code/packages/
+/code/packages.config
+
+/code/MarketingAutomation/Sitecore.Automation.MarketingAutomation/Diagnostics/PerformanceCounters/Counters.cs
+/code/OMS/Sitecore.Analytics.MongoDB/Diagnostics/PerformanceCounters/Counters.cs
+/code/OMS/Sitecore.Analytics/Diagnostics/PerformanceCounters/Counters.cs
+/code/OMS/Sitecore.Analytics/Tracking/Diagnostics/PerformanceCounters/Counters.cs
+/code/OMS/Sitecore.Analytics/Data/DataAccess/DataSets/Internal/QueryContext.cs
+/code/OMS/Sitecore.Analytics/Data/DataAccess/DataSets/SharedDataSetObjects.cs
+/code/OMS/Sitecore.Analytics/Data/Items/CustomItems.cs
+/code/OMS/Sitecore.Analytics/Data/Items/templates.xml
+/code/Sitecore.Kernel/Diagnostics/PerformanceCounters/Counters.cs
+
+/code/Sitecore/.vs
+
+/code/Sitecore.Client/App_Config/Include/Sitecore.Analytics.MarketingTaxonomy.config
+/code/Sitecore.Client/App_Config/Include/Sitecore.Analytics.MarketingTaxonomyCD.config.disabled
+/code/Sitecore.Client/App_Config/Include/Sitecore.ECM.Simulator.config
+/code/Sitecore.Client/App_Config/Include/Sitecore.Marketing.config
+/code/Sitecore.Client/App_Config/Include/Sitecore.MarketingCD.config.disabled
+
+/code/Sitecore.Client/PrepareECMTest.ashx
+/code/Sitecore.Client/proxy.asmx
+/code/Sitecore.Client/RedirectUrlPage.aspx
+/code/Sitecore.Client/RegisterEmailOpening.aspx
+
+/code/Sitecore.Client/data/packages/
+
+/code/Sitecore.IsolatedTests/data/
+/code/Sitecore.IsolatedTests/temp/
+
+/dynamicenv/
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+code/Sitecore/.vs/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# NCrunch
+.*crunch*.local.xml
+*.ncrunchsolution
+*.ncrunchproject
+*.ncrunchsolution.user
+_NCrunch_*/
+nCrunchTemp*
+code/Sitecore.IntegrationTests/Components/
+code/Sitecore/Sitecore.IsolatorCache.user
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+code/Website/sitecore/shell/Themes/
+code/Website/sitecore/shell/Controls/Rich Text Editor/Dictionaries/af-ZA.tdf
+code/Website/sitecore/shell/Controls/Rich Text Editor/Dictionaries/
+legoland_*.txt
+code/Sitecore/AssemblyVersionInfo.bak
+code/Sitecore/Sitecore.IsolatorCache.user
+testground/
+
+# Skip Rider solution folders
+.idea/
+
+buildscript/generate.breaking.changes.bat
+buildscript/generate.unittest.report.bat
+buildscript/generate.nuget.packages.bat
+buildscript/tg.update.bat
+buildscript/tg.serialization.bat
+buildscript/tg.reset.bat
+buildscript/tg.init.bat
+buildscript/tg.delete.bat
+buildscript/tools/bfx/
+buildscript/tools/Component.SDK/
+buildscript/tools/nant.sitecore/
+buildscript/tools/program.meta.8.2.*
+buildscript/tools/ps.ads/
+dist/
